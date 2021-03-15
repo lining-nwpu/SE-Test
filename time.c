@@ -20,6 +20,11 @@ void time2str(time_t t, char *buf)
   strftime(buf, 30, "%Y-%m-%d %H:%M:%S", localtime(&t));
 }
 
+int se_add(int a, int b)
+{
+	// add by lining
+	return a+b;
+}
 
 int main()
 {
