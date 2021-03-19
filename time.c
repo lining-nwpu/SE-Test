@@ -22,7 +22,7 @@ void time2str(time_t t, char *buf)
 
 int se_add(int a, int b)
 {
-	// add by lining 2021/03/19
+	// add by lining 2021/03/18
 	return a+b;
 }
 
