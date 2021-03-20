@@ -1,15 +1,15 @@
 /*
 This file includes some processes for time data.
-Function: 
+Function:
 1.transform a string to time.
 2.transform time to string.
 */
 
-#include <stdio.h>                                         
-#include <time.h>   
- 
+#include <stdio.h>
+#include <time.h>
+
 time_t str2time(const char *str_time){
-  struct tm stm;  
+  struct tm stm;
   strptime(str_time, "%Y-%m-%d %H:%M:%S", &stm);
   long t = mktime(&stm);
   return t;
@@ -19,11 +19,15 @@ void time2str(time_t t, char *buf)
 {
   strftime(buf, 30, "%Y-%m-%d %H:%M:%S", localtime(&t));
 }
-
 int se_add(int a, int b)
 {
 	// add by lining 2021/03/18
 	return a+b;
+}
+
+float se_div(int a, int b)
+{
+    return a / (float)b; //division by Adema(2018380126)
 }
 
 int main()
@@ -36,6 +40,8 @@ int main()
   char szTime2[30];
   time2str(start_t, szTime2);
   printf("%s\n", szTime2);
+
+  printf("%f", se_div(5, 2));
 
   return 0;
 }
