@@ -27,6 +27,11 @@ int se_add(int a, int b)
 
 float se_div(int a, int b)
 {
+    if (b == 0)
+    {
+    	printf("Invalid division by 0 provides - ");
+        return (float)INFINITY;
+    }
     return a / (float)b; //division by Adema(2018380126)
 }
 
