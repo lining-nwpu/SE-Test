@@ -26,6 +26,12 @@ int se_add(int a, int b)
 	return a+b;
 }
 
+float se_multiply(float a, float b)
+{
+	// multiplication by 2018380115 Wong
+	return a*b;
+}
+
 int main()
 {
   char szTime[30] = {0};
