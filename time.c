@@ -25,6 +25,11 @@ int se_add(int a, int b)
 	return a+b;
 }
 
+int mult (int a, int b)
+{
+    return a * b; //multiplication by Altynay 2018380120
+}
+
 float se_div(int a, int b)
 {
     if (b == 0)
@@ -47,6 +52,8 @@ int main()
   printf("%s\n", szTime2);
 
   printf("%f", se_div(5, 2));
+
+  printf("%d", mult(10, 5));
 
   return 0;
 }
