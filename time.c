@@ -19,10 +19,17 @@ void time2str(time_t t, char *buf)
 {
   strftime(buf, 30, "%Y-%m-%d %H:%M:%S", localtime(&t));
 }
+
 int se_add(int a, int b)
 {
 	// add by lining 2021/03/18
 	return a+b;
+}
+
+float se_multiply(float a, float b)
+{
+	// multiplication by 2018380115 Wong
+	return a*b;
 }
 
 int mult (int a, int b)
@@ -38,6 +45,7 @@ float se_div(int a, int b)
         return (float)INFINITY;
     }
     return a / (float)b; //division by Adema(2018380126)
+
 }
 
 int main()
