@@ -68,5 +68,7 @@ int main()
 
   printf("%d", mult(10, 5));
 
+  printf("%d", se_subtract(7, 3));
+	
   return 0;
 }
