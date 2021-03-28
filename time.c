@@ -48,6 +48,11 @@ float se_div(int a, int b)
 
 }
 
+int se_subtract(int a, int b){
+	// subtraction by Amirbek_2018380038
+	return a - b;
+}
+
 int main()
 {
   char szTime[30] = {0};
